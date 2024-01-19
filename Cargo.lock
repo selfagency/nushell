@@ -1529,9 +1529,9 @@ checksum = "d2fabcfbdc87f4758337ca535fb41a6d701b65693ce38287d856d1674551ec9b"
 
 [[package]]
 name = "h2"
-version = "0.3.20"
+version = "0.3.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "97ec8491ebaf99c8eaa73058b045fe58073cd6be7f596ac993ced0b0a0c01049"
+checksum = "bb2c4422095b67ee78da96fbb51a4cc413b3b25883c7717ff7ca1ab31022c9c9"
 dependencies = [
  "bytes",
  "fnv",
@@ -1539,7 +1539,7 @@ dependencies = [
  "futures-sink",
  "futures-util",
  "http",
- "indexmap 1.9.3",
+ "indexmap",
  "slab",
  "tokio",
  "tokio-util",
@@ -1586,12 +1586,6 @@ name = "hash_hasher"
 version = "2.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "74721d007512d0cb3338cd20f0654ac913920061a4c4d0d8708edb3f2a698c0c"
-
-[[package]]
-name = "hashbrown"
-version = "0.12.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8a9ee70c43aaf417c914396645a0fa852624801b24ebb7ae78fe8272889ac888"
 
 [[package]]
 name = "hashbrown"
@@ -1787,16 +1781,6 @@ name = "indent_write"
 version = "2.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0cfe9645a18782869361d9c8732246be7b410ad4e919d3609ebabdac00ba12c3"
-
-[[package]]
-name = "indexmap"
-version = "1.9.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bd070e393353796e801d209ad339e89596eb4c8d430d18ede6a1cced8fafbd99"
-dependencies = [
- "autocfg",
- "hashbrown 0.12.3",
-]
 
 [[package]]
 name = "indexmap"
@@ -2651,7 +2635,7 @@ dependencies = [
 name = "nu-cmd-base"
 version = "0.84.1"
 dependencies = [
- "indexmap 2.0.0",
+ "indexmap",
  "miette",
  "nu-engine",
  "nu-parser",
@@ -2665,7 +2649,7 @@ version = "0.84.1"
 dependencies = [
  "chrono",
  "fancy-regex",
- "indexmap 2.0.0",
+ "indexmap",
  "nu-cmd-lang",
  "nu-engine",
  "nu-parser",
@@ -2756,7 +2740,7 @@ dependencies = [
  "filetime",
  "fs_extra",
  "htmlescape",
- "indexmap 2.0.0",
+ "indexmap",
  "indicatif",
  "itertools",
  "libc",
@@ -2928,7 +2912,7 @@ dependencies = [
  "chrono",
  "chrono-humanize",
  "fancy-regex",
- "indexmap 2.0.0",
+ "indexmap",
  "lru",
  "miette",
  "nu-path",
@@ -3041,7 +3025,7 @@ version = "0.84.1"
 dependencies = [
  "eml-parser",
  "ical",
- "indexmap 2.0.0",
+ "indexmap",
  "nu-plugin",
  "nu-protocol",
  "rust-ini",
@@ -3657,7 +3641,7 @@ dependencies = [
  "comfy-table",
  "either",
  "hashbrown 0.14.0",
- "indexmap 2.0.0",
+ "indexmap",
  "num-traits",
  "once_cell",
  "polars-arrow",
@@ -3732,7 +3716,7 @@ dependencies = [
  "arrow2",
  "fallible-streaming-iterator",
  "hashbrown 0.14.0",
- "indexmap 2.0.0",
+ "indexmap",
  "num-traits",
  "polars-arrow",
  "polars-error",
@@ -3773,7 +3757,7 @@ dependencies = [
  "argminmax",
  "arrow2",
  "either",
- "indexmap 2.0.0",
+ "indexmap",
  "memchr",
  "polars-arrow",
  "polars-core",
@@ -4605,7 +4589,7 @@ version = "0.9.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "452e67b9c20c37fa79df53201dc03839651086ed9bbe92b3ca585ca9fdaa7d85"
 dependencies = [
- "indexmap 2.0.0",
+ "indexmap",
  "itoa",
  "ryu",
  "serde",
@@ -5288,7 +5272,7 @@ version = "0.19.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c500344a19072298cd05a7224b3c0c629348b78692bf48466c5238656e315a78"
 dependencies = [
- "indexmap 2.0.0",
+ "indexmap",
  "serde",
  "serde_spanned",
  "toml_datetime",
